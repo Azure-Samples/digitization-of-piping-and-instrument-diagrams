@@ -1,0 +1,691 @@
+{
+  "image_url": "pid123.png",
+  "image_details": {
+    "format": "png",
+    "width": 7168,
+    "height": 4561
+  },
+  "bounding_box_inclusive": {
+    "topX": 0,
+    "topY": 0,
+    "bottomX": 1,
+    "bottomY": 1
+  },
+  "label": [
+    {
+      "topX": 0.1607218879,
+      "topY": 0.567652413,
+      "bottomX": 0.1783781324,
+      "bottomY": 0.5945149111,
+      "id": 0,
+      "label": "Instrument/Indicator/shared control logic",
+      "score": 0.9498975873
+    },
+    {
+      "topX": 0.2014905248,
+      "topY": 0.8176149518,
+      "bottomX": 0.2168904032,
+      "bottomY": 0.8412554452,
+      "id": 1,
+      "label": "Instrument/Indicator/Solenoid actuator",
+      "score": 0.9418206811
+    },
+    {
+      "topX": 0.6166300092,
+      "topY": 0.5990262835,
+      "bottomX": 0.6343009949,
+      "bottomY": 0.6265106201,
+      "id": 2,
+      "label": "Instrument/Indicator/shared with Pri. Loc access",
+      "score": 0.9282765388
+    },
+    {
+      "topX": 0.2209042958,
+      "topY": 0.3484159748,
+      "bottomX": 0.2382913589,
+      "bottomY": 0.3762875246,
+      "id": 3,
+      "label": "Instrument/Indicator/shared with Pri. Loc access",
+      "score": 0.9235585928
+    },
+    {
+      "topX": 0.2594172341,
+      "topY": 0.2875836405,
+      "bottomX": 0.2754946572,
+      "bottomY": 0.3120632815,
+      "id": 4,
+      "label": "Instrument/Indicator/Solenoid actuator",
+      "score": 0.9232486486
+    },
+    {
+      "topX": 0.1824675832,
+      "topY": 0.2878129509,
+      "bottomX": 0.198158196,
+      "bottomY": 0.3122883057,
+      "id": 5,
+      "label": "Instrument/Indicator/Solenoid actuator",
+      "score": 0.9175493717
+    },
+    {
+      "topX": 0.6780514308,
+      "topY": 0.6909134254,
+      "bottomX": 0.6955700466,
+      "bottomY": 0.7172586677,
+      "id": 6,
+      "label": "Instrument/Indicator/shared with Pri. Loc access",
+      "score": 0.916223824
+    },
+    {
+      "topX": 0.5997561863,
+      "topY": 0.7546991927,
+      "bottomX": 0.6141739982,
+      "bottomY": 0.7772640271,
+      "id": 7,
+      "label": "Instrument/Indicator/Solenoid actuator",
+      "score": 0.8991570473
+    },
+    {
+      "topX": 0.4174288341,
+      "topY": 0.4191925392,
+      "bottomX": 0.4363006864,
+      "bottomY": 0.4317254913,
+      "id": 8,
+      "label": "Piping/Fittings/Jacketed pipe",
+      "score": 0.8949962854
+    },
+    {
+      "topX": 0.6423924582,
+      "topY": 0.8780348703,
+      "bottomX": 0.650611278,
+      "bottomY": 0.9098115557,
+      "id": 9,
+      "label": "Piping/Fittings/Jacketed pipe",
+      "score": 0.8933099508
+    },
+    {
+      "topX": 0.1005986895,
+      "topY": 0.2236129246,
+      "bottomX": 0.1186202458,
+      "bottomY": 0.2510434269,
+      "id": 10,
+      "label": "Instrument/Indicator/Field mounted discrete recorder",
+      "score": 0.8888580799
+    },
+    {
+      "topX": 0.1800012316,
+      "topY": 0.7868474896,
+      "bottomX": 0.1972619193,
+      "bottomY": 0.8135381977,
+      "id": 11,
+      "label": "Instrument/Indicator/discrete with Aux Loc access",
+      "score": 0.8876584768
+    },
+    {
+      "topX": 0.1050020218,
+      "topY": 0.3558272458,
+      "bottomX": 0.1189609528,
+      "bottomY": 0.3831841972,
+      "id": 12,
+      "label": "Instrument/Valve/Control Valve",
+      "score": 0.881097734
+    },
+    {
+      "topX": 0.6163974762,
+      "topY": 0.28633452,
+      "bottomX": 0.6341504233,
+      "bottomY": 0.3129839951,
+      "id": 13,
+      "label": "Instrument/Indicator/Field mounted discrete recorder",
+      "score": 0.8793007731
+    },
+    {
+      "topX": 0.1213552611,
+      "topY": 0.8559469159,
+      "bottomX": 0.125678839,
+      "bottomY": 0.8690173546,
+      "id": 14,
+      "label": "Piping/Fittings/Flanged connection",
+      "score": 0.871288836
+    },
+    {
+      "topX": 0.1958478246,
+      "topY": 0.7497569738,
+      "bottomX": 0.2135647229,
+      "bottomY": 0.7763262974,
+      "id": 15,
+      "label": "Instrument/Valve/Control Valve",
+      "score": 0.8705620766
+    },
+    {
+      "topX": 0.5774880001,
+      "topY": 0.2921780361,
+      "bottomX": 0.596969768,
+      "bottomY": 0.3083373509,
+      "id": 16,
+      "label": "Piping/Fittings/Jacketed pipe",
+      "score": 0.870536983
+    },
+    {
+      "topX": 0.1800166266,
+      "topY": 0.6056983176,
+      "bottomX": 0.2001524789,
+      "bottomY": 0.6187919017,
+      "id": 17,
+      "label": "Piping/Fittings/Jacketed pipe",
+      "score": 0.8584266901
+    },
+    {
+      "topX": 0.5349018642,
+      "topY": 0.5409220149,
+      "bottomX": 0.5486406599,
+      "bottomY": 0.5566826295,
+      "id": 18,
+      "label": "Instrument/Valve/Diaphragm valve",
+      "score": 0.8563260436
+    },
+    {
+      "topX": 0.1205896241,
+      "topY": 0.6301395545,
+      "bottomX": 0.1386036328,
+      "bottomY": 0.6564928548,
+      "id": 19,
+      "label": "Instrument/Indicator/Field mounted discrete recorder",
+      "score": 0.8559628129
+    },
+    {
+      "topX": 0.419389207,
+      "topY": 0.2860796639,
+      "bottomX": 0.4367280415,
+      "bottomY": 0.3135964897,
+      "id": 20,
+      "label": "Instrument/Indicator/Field mounted discrete indicator",
+      "score": 0.8425757289
+    },
+    {
+      "topX": 0.6606261117,
+      "topY": 0.7864499896,
+      "bottomX": 0.6768432617,
+      "bottomY": 0.8122544878,
+      "id": 21,
+      "label": "Instrument/Indicator/Field mounted discrete indicator",
+      "score": 0.8418970704
+    },
+    {
+      "topX": 0.3445273536,
+      "topY": 0.2282098063,
+      "bottomX": 0.3569255556,
+      "bottomY": 0.2468208142,
+      "id": 22,
+      "label": "Instrument/Valve/Circle valve",
+      "score": 0.8399398923
+    },
+    {
+      "topX": 0.6421113695,
+      "topY": 0.6194787186,
+      "bottomX": 0.652426093,
+      "bottomY": 0.6432783148,
+      "id": 23,
+      "label": "Instrument/Valve/Diaphragm valve",
+      "score": 0.8327532411
+    },
+    {
+      "topX": 0.252173015,
+      "topY": 0.9181062505,
+      "bottomX": 0.2564917428,
+      "bottomY": 0.9319308849,
+      "id": 24,
+      "label": "Piping/Fittings/Flanged connection",
+      "score": 0.8324064612
+    },
+    {
+      "topX": 0.6419434139,
+      "topY": 0.4401935192,
+      "bottomX": 0.6510025569,
+      "bottomY": 0.4627838992,
+      "id": 25,
+      "label": "Instrument/Valve/Gate valve NC",
+      "score": 0.8319357634
+    },
+    {
+      "topX": 0.2049086026,
+      "topY": 0.9053846209,
+      "bottomX": 0.2135727882,
+      "bottomY": 0.9115234546,
+      "id": 26,
+      "label": "Piping/Fittings/Flanged connection",
+      "score": 0.8194335699
+    },
+    {
+      "topX": 0.537065179,
+      "topY": 0.9161071777,
+      "bottomX": 0.5505014147,
+      "bottomY": 0.9309488361,
+      "id": 27,
+      "label": "Instrument/Valve/Diaphragm valve",
+      "score": 0.8170675635
+    },
+    {
+      "topX": 0.6964535849,
+      "topY": 0.786254197,
+      "bottomX": 0.7133869171,
+      "bottomY": 0.8135880031,
+      "id": 28,
+      "label": "Instrument/Indicator/discrete with Aux Loc access",
+      "score": 0.8148956895
+    },
+    {
+      "topX": 0.6998303005,
+      "topY": 0.416296241,
+      "bottomX": 0.7124691554,
+      "bottomY": 0.43113087,
+      "id": 29,
+      "label": "Instrument/Valve/Diaphragm valve",
+      "score": 0.8138177395
+    },
+    {
+      "topX": 0.545992933,
+      "topY": 0.2274329368,
+      "bottomX": 0.5584376744,
+      "bottomY": 0.2475605654,
+      "id": 30,
+      "label": "Instrument/Valve/Circle valve",
+      "score": 0.8119115829
+    },
+    {
+      "topX": 0.3642540523,
+      "topY": 0.3213429397,
+      "bottomX": 0.3725204468,
+      "bottomY": 0.3333267469,
+      "id": 31,
+      "label": "Instrument/Valve/Rotary valve NC",
+      "score": 0.7934442759
+    },
+    {
+      "topX": 0.1407103811,
+      "topY": 0.2873228695,
+      "bottomX": 0.1578646932,
+      "bottomY": 0.31359919,
+      "id": 32,
+      "label": "Instrument/Indicator/discrete with Pri. Loc access",
+      "score": 0.7916017771
+    },
+    {
+      "topX": 0.2313198907,
+      "topY": 0.2878669567,
+      "bottomX": 0.2389287949,
+      "bottomY": 0.3111219513,
+      "id": 33,
+      "label": "Piping/Fittings/Heating coil tubes",
+      "score": 0.7905426025
+    },
+    {
+      "topX": 0.6820448739,
+      "topY": 0.8104756387,
+      "bottomX": 0.6912240165,
+      "bottomY": 0.8341163035,
+      "id": 34,
+      "label": "Instrument/Valve/Gate valve NC",
+      "score": 0.7854768038
+    },
+    {
+      "topX": 0.7220338004,
+      "topY": 0.1188457789,
+      "bottomX": 0.7311672756,
+      "bottomY": 0.1264141383,
+      "id": 35,
+      "label": "Piping/Fittings/Flanged connection",
+      "score": 0.7847592235
+    },
+    {
+      "topX": 0.1193184035,
+      "topY": 0.1051862481,
+      "bottomX": 0.1235852786,
+      "bottomY": 0.1191989599,
+      "id": 36,
+      "label": "Piping/Fittings/Flanged connection",
+      "score": 0.7846915126
+    },
+    {
+      "topX": 0.6428760529,
+      "topY": 0.3900216778,
+      "bottomX": 0.6518937792,
+      "bottomY": 0.397435992,
+      "id": 37,
+      "label": "Piping/Fittings/Flanged connection",
+      "score": 0.7838403583
+    },
+    {
+      "topX": 0.2001608712,
+      "topY": 0.6281481111,
+      "bottomX": 0.2177400044,
+      "bottomY": 0.6559775706,
+      "id": 38,
+      "label": "Instrument/Indicator/discrete with Pri. Loc access",
+      "score": 0.7669376731
+    },
+    {
+      "topX": 0.1193843569,
+      "topY": 0.1680155122,
+      "bottomX": 0.1237101419,
+      "bottomY": 0.1818213731,
+      "id": 39,
+      "label": "Piping/Fittings/Flanged connection",
+      "score": 0.7665053606
+    },
+    {
+      "topX": 0.6675269536,
+      "topY": 0.5242105548,
+      "bottomX": 0.6735865457,
+      "bottomY": 0.5572005711,
+      "id": 40,
+      "label": "Piping/Fittings/Spade close blind (flanged)",
+      "score": 0.7647868395
+    },
+    {
+      "topX": 0.5769447327,
+      "topY": 0.2234569507,
+      "bottomX": 0.5944714137,
+      "bottomY": 0.2514373694,
+      "id": 41,
+      "label": "Instrument/Indicator/discrete with Aux Loc access",
+      "score": 0.7617400289
+    },
+    {
+      "topX": 0.5975207738,
+      "topY": 0.6912444897,
+      "bottomX": 0.6149074009,
+      "bottomY": 0.7179327975,
+      "id": 42,
+      "label": "Instrument/Indicator/discrete with Pri. Loc access",
+      "score": 0.7554783821
+    },
+    {
+      "topX": 0.1419099263,
+      "topY": 0.2237710417,
+      "bottomX": 0.1600279399,
+      "bottomY": 0.2513725624,
+      "id": 43,
+      "label": "Instrument/Indicator/discrete with Aux Loc access",
+      "score": 0.7498126626
+    },
+    {
+      "topX": 0.4211874008,
+      "topY": 0.605555245,
+      "bottomX": 0.4344032015,
+      "bottomY": 0.619881705,
+      "id": 44,
+      "label": "Instrument/Valve/Gate valve NC",
+      "score": 0.7427175045
+    },
+    {
+      "topX": 0.6425406865,
+      "topY": 0.8137791666,
+      "bottomX": 0.6520449502,
+      "bottomY": 0.8374949252,
+      "id": 45,
+      "label": "Instrument/Valve/Butterfly Valve",
+      "score": 0.7345495224
+    },
+    {
+      "topX": 0.0853224414,
+      "topY": 0.2536335634,
+      "bottomX": 0.0941142695,
+      "bottomY": 0.272257687,
+      "id": 46,
+      "label": "Instrument/Valve/Sealing gate valve",
+      "score": 0.7086119652
+    },
+    {
+      "topX": 0.2001310757,
+      "topY": 0.1920158301,
+      "bottomX": 0.2181161199,
+      "bottomY": 0.220757388,
+      "id": 47,
+      "label": "Instrument/Indicator/discrete with Aux Loc access",
+      "score": 0.7056300044
+    },
+    {
+      "topX": 0.7217390333,
+      "topY": 0.6366032804,
+      "bottomX": 0.7306867872,
+      "bottomY": 0.653385891,
+      "id": 48,
+      "label": "Instrument/Valve/Sealing gate valve",
+      "score": 0.697260499
+    },
+    {
+      "topX": 0.443736812,
+      "topY": 0.3904172919,
+      "bottomX": 0.4522343772,
+      "bottomY": 0.3971367311,
+      "id": 49,
+      "label": "Piping/Fittings/Flanged connection",
+      "score": 0.6958068013
+    },
+    {
+      "topX": 0.4262864522,
+      "topY": 0.2116222596,
+      "bottomX": 0.4323614665,
+      "bottomY": 0.244143711,
+      "id": 50,
+      "label": "Piping/Fittings/Spade close blind (flanged)",
+      "score": 0.6906903982
+    },
+    {
+      "topX": 0.2844938823,
+      "topY": 0.3229496988,
+      "bottomX": 0.2933027267,
+      "bottomY": 0.3423702797,
+      "id": 51,
+      "label": "Instrument/Valve/Butterfly Valve",
+      "score": 0.6901837587
+    },
+    {
+      "topX": 0.2765981402,
+      "topY": 0.5092842874,
+      "bottomX": 0.293081774,
+      "bottomY": 0.5188786367,
+      "id": 52,
+      "label": "Piping/Fittings/Spade blind",
+      "score": 0.6710904837
+    },
+    {
+      "topX": 0.6189414978,
+      "topY": 0.2311274925,
+      "bottomX": 0.6315665109,
+      "bottomY": 0.2444286989,
+      "id": 53,
+      "label": "Instrument/Valve/Gate valve NC",
+      "score": 0.6700230837
+    },
+    {
+      "topX": 0.694890322,
+      "topY": 0.5435693291,
+      "bottomX": 0.7072799138,
+      "bottomY": 0.5568041855,
+      "id": 54,
+      "label": "Instrument/Valve/Gate valve NC",
+      "score": 0.6676794291
+    },
+    {
+      "topX": 0.5764425005,
+      "topY": 0.5436955141,
+      "bottomX": 0.590397971,
+      "bottomY": 0.5568088146,
+      "id": 55,
+      "label": "Instrument/Valve/Gate valve NC",
+      "score": 0.6665892005
+    },
+    {
+      "topX": 0.6820374625,
+      "topY": 0.5226170401,
+      "bottomX": 0.692149898,
+      "bottomY": 0.5357001658,
+      "id": 56,
+      "label": "Piping/Fittings/Mid arrow flow direction",
+      "score": 0.643027246
+    },
+    {
+      "topX": 0.2049847467,
+      "topY": 0.4443431383,
+      "bottomX": 0.2136851447,
+      "bottomY": 0.4622754729,
+      "id": 57,
+      "label": "Instrument/Valve/Globe valve NC",
+      "score": 0.6390194297
+    },
+    {
+      "topX": 0.6823699951,
+      "topY": 0.3034761836,
+      "bottomX": 0.6906685965,
+      "bottomY": 0.3111313809,
+      "id": 58,
+      "label": "Piping/Fittings/Flanged connection",
+      "score": 0.6345291734
+    },
+    {
+      "topX": 0.7220739637,
+      "topY": 0.7058844406,
+      "bottomX": 0.7305740901,
+      "bottomY": 0.7229706839,
+      "id": 59,
+      "label": "Instrument/Valve/Globe valve NC",
+      "score": 0.6239081621
+    },
+    {
+      "topX": 0.1176642554,
+      "topY": 0.5035300951,
+      "bottomX": 0.1336184365,
+      "bottomY": 0.5128187544,
+      "id": 60,
+      "label": "Piping/Fittings/Spade blind",
+      "score": 0.6206248999
+    },
+    {
+      "topX": 0.204929924,
+      "topY": 0.3294926333,
+      "bottomX": 0.2137951987,
+      "bottomY": 0.3491256371,
+      "id": 61,
+      "label": "Instrument/Valve/Gate valve NC",
+      "score": 0.6119870543
+    },
+    {
+      "topX": 0.161401953,
+      "topY": 0.7069515271,
+      "bottomX": 0.1779888289,
+      "bottomY": 0.7202354174,
+      "id": 62,
+      "label": "Piping/Fittings/Heating coil tubes",
+      "score": 0.6032830477
+    },
+    {
+      "topX": 0.2624516351,
+      "topY": 0.6052450116,
+      "bottomX": 0.2754385539,
+      "bottomY": 0.6189690065,
+      "id": 63,
+      "label": "Instrument/Valve/Globe valve NC",
+      "score": 0.5973129869
+    },
+    {
+      "topX": 0.5380595616,
+      "topY": 0.5988646947,
+      "bottomX": 0.5554285322,
+      "bottomY": 0.6260844884,
+      "id": 64,
+      "label": "Instrument/Indicator/discrete with Aux Loc access",
+      "score": 0.5874856114
+    },
+    {
+      "topX": 0.2841303962,
+      "topY": 0.8724582115,
+      "bottomX": 0.2966512135,
+      "bottomY": 0.8962519785,
+      "id": 65,
+      "label": "Instrument/Valve/Needle Valve",
+      "score": 0.5860741138
+    },
+    {
+      "topX": 0.2405039924,
+      "topY": 0.505102179,
+      "bottomX": 0.2575023924,
+      "bottomY": 0.5317459106,
+      "id": 66,
+      "label": "Instrument/Indicator/discrete with Pri. Loc access",
+      "score": 0.5775234699
+    },
+    {
+      "topX": 0.3221860341,
+      "topY": 0.3837609452,
+      "bottomX": 0.3352969851,
+      "bottomY": 0.4046179096,
+      "id": 67,
+      "label": "Instrument/Valve/Circle valve",
+      "score": 0.5744074583
+    },
+    {
+      "topX": 0.2842343467,
+      "topY": 0.7608241392,
+      "bottomX": 0.2938880375,
+      "bottomY": 0.7789138622,
+      "id": 68,
+      "label": "Instrument/Valve/Diaphragm valve",
+      "score": 0.572766602
+    },
+    {
+      "topX": 0.3469094958,
+      "topY": 0.6690260641,
+      "bottomX": 0.3616806575,
+      "bottomY": 0.6811777179,
+      "id": 69,
+      "label": "Instrument/Valve/Check valve",
+      "score": 0.5429418683
+    },
+    {
+      "topX": 0.6387527466,
+      "topY": 0.5645636226,
+      "bottomX": 0.6508176531,
+      "bottomY": 0.5907180443,
+      "id": 70,
+      "label": "Instrument/Valve/Needle Valve",
+      "score": 0.5398893356
+    },
+    {
+      "topX": 0.3235580989,
+      "topY": 0.4491987764,
+      "bottomX": 0.3334038871,
+      "bottomY": 0.4656888983,
+      "id": 71,
+      "label": "Piping/Fittings/Right concentric reducer",
+      "score": 0.5370734334
+    },
+    {
+      "topX": 0.4913582393,
+      "topY": 0.4812763514,
+      "bottomX": 0.4993940626,
+      "bottomY": 0.4941487687,
+      "id": 73,
+      "label": "Piping/Fittings/Right concentric reducer",
+      "score": 0.524102509
+    },
+    {
+      "topX": 0.2721753529,
+      "topY": 0.6319934974,
+      "bottomX": 0.2940481731,
+      "bottomY": 0.6423091246,
+      "id": 75,
+      "label": "Piping/Fittings/Spade open blind(flanged)",
+      "score": 0.5122341514
+    },
+    {
+      "topX": 0.1650078637,
+      "topY": 0.3359296563,
+      "bottomX": 0.1867009572,
+      "bottomY": 0.346415959,
+      "id": 76,
+      "label": "Piping/Fittings/Spade close blind (flanged)",
+      "score": 0.5032547712
+    }
+  ]
+}

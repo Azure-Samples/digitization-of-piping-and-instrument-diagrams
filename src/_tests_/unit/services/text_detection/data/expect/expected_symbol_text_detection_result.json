@@ -1,0 +1,182 @@
+[
+    {
+        "label": "lmi",
+        "score": null,
+        "topX": 0.07070620974744556,
+        "topY": 0.24322396576319544,
+        "bottomX": 0.15093521539555796,
+        "bottomY": 0.3673323823109843,
+        "id": 0,
+        "text_associated": "TV 100"
+    },
+    {
+        "label": "lmi",
+        "score": null,
+        "topX": 0.1603187248280857,
+        "topY": 0.0007132667617689016,
+        "bottomX": 0.24007855500457173,
+        "bottomY": 0.11697574893009986,
+        "id": 1,
+        "text_associated": "TIC 100"
+    },
+    {
+        "label": "lmi",
+        "score": null,
+        "topX": 0.3339136493298494,
+        "topY": 0.0021398002853067048,
+        "bottomX": 0.41461183044958816,
+        "bottomY": 0.11768901569186876,
+        "id": 2,
+        "text_associated": "TT 100"
+    },
+    {
+        "label": "lmi",
+        "score": null,
+        "topX": 0.48686485308005195,
+        "topY": 0.0,
+        "bottomX": 0.5778848945755714,
+        "bottomY": 0.12054208273894436,
+        "id": 3,
+        "text_associated": "TE 100"
+    },
+    {
+        "label": "lmi",
+        "score": null,
+        "topX": 0.5300289964696797,
+        "topY": 0.3302425106990014,
+        "bottomX": 0.608850475702913,
+        "bottomY": 0.4522111269614836,
+        "id": 4,
+        "text_associated": "FT 101"
+    },
+    {
+        "label": "lmi",
+        "score": null,
+        "topX": 0.4817039228921617,
+        "topY": 0.4893009985734665,
+        "bottomX": 0.5609945775970213,
+        "bottomY": 0.6105563480741797,
+        "id": 5,
+        "text_associated": "FE 101"
+    },
+    {
+        "label": "lmi",
+        "score": null,
+        "topX": 0.6679665851278379,
+        "topY": 0.33808844507845937,
+        "bottomX": 0.74303466058806,
+        "bottomY": 0.4529243937232525,
+        "id": 6,
+        "text_associated": "FIC 101"
+    },
+    {
+        "label": "lmi",
+        "score": null,
+        "topX": 0.7641475568112475,
+        "topY": 0.49072753209700426,
+        "bottomX": 0.8439073869877335,
+        "bottomY": 0.6141226818830242,
+        "id": 7,
+        "text_associated": "FV 101"
+    },
+    {
+        "label": "valve",
+        "score": null,
+        "topX": 0.15750367199832738,
+        "topY": 0.37945791726105566,
+        "bottomX": 0.24242443236270367,
+        "bottomY": 0.5221112696148359,
+        "id": 8,
+        "text_associated": null
+    },
+    {
+        "label": "valve",
+        "score": null,
+        "topX": 0.6604597775818156,
+        "topY": 0.6219686162624821,
+        "bottomX": 0.7510106436057086,
+        "bottomY": 0.7631954350927247,
+        "id": 9,
+        "text_associated": "Control Valve 1"
+    },
+    {
+        "label": "plate",
+        "score": null,
+        "topX": 0.5464501379766032,
+        "topY": 0.6590584878744651,
+        "bottomX": 0.5994669662703852,
+        "bottomY": 0.7631954350927247,
+        "id": 10,
+        "text_associated": "Orifice Plate"
+    },
+    {
+        "label": "arrow",
+        "score": null,
+        "topX": 0.26729073235890227,
+        "topY": 0.44151212553495006,
+        "bottomX": 0.29121868141184803,
+        "bottomY": 0.4914407988587732,
+        "id": 11,
+        "text_associated": null
+    },
+    {
+        "label": "arrow",
+        "score": null,
+        "topX": 0.4629369040271062,
+        "topY": 0.21897289586305277,
+        "bottomX": 0.4859265021367992,
+        "bottomY": 0.25962910128388017,
+        "id": 12,
+        "text_associated": null
+    },
+    {
+        "label": "arrow",
+        "score": null,
+        "topX": 0.06226105125817056,
+        "topY": 0.6761768901569187,
+        "bottomX": 0.08712735125436914,
+        "bottomY": 0.7203994293865906,
+        "id": 13,
+        "text_associated": null
+    },
+    {
+        "label": "arrow",
+        "score": null,
+        "topX": 0.3620641776274327,
+        "topY": 0.9436519258202568,
+        "bottomX": 0.38739965309525765,
+        "bottomY": 0.985021398002853,
+        "id": 14,
+        "text_associated": null
+    },
+    {
+        "label": "arrow",
+        "score": null,
+        "topX": 0.8514141945337557,
+        "topY": 0.68830242510699,
+        "bottomX": 0.8809722492462182,
+        "bottomY": 0.7318116975748931,
+        "id": 15,
+        "text_associated": null
+    },
+    {
+        "label": "vessel",
+        "score": null,
+        "topX": 0.28418104933745225,
+        "topY": 0.1861626248216833,
+        "bottomX": 0.4648136059136117,
+        "bottomY": 0.753922967189729,
+        "id": 16,
+        "text_associated": null
+    },
+    {
+        "label": "valve",
+        "score": null,
+        "topX": 0.33954375498936606,
+        "topY": 0.8145506419400856,
+        "bottomX": 0.39865986441429097,
+        "bottomY": 0.9044222539229672,
+        "id": 17,
+        "text_associated": null
+    }
+]

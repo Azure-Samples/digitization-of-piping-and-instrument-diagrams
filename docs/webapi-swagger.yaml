@@ -1,0 +1,773 @@
+openapi: 3.1.0
+info:
+  title: FastAPI
+  version: 0.1.0
+paths:
+  /api/pid-digitization/symbol-detection/{pid_id}:
+    post:
+      tags:
+        - pid-digitization
+      summary: Detect Symbols
+      description: >-
+        Detects symbols in an image and returns the bounding boxes of the
+        detected symbols.
+
+
+        param pid: The PID.
+
+        param bounding_box_inclusive_str: The bounding box of the P&ID image
+        without extraneous legend information.
+
+        param file: The image to detect symbols in.
+
+        return: The bounding boxes of the detected symbols.
+
+        rtype: symbol_detection.ObjectDetectionPrediction
+      operationId: detect_symbols_api_pid_digitization_symbol_detection__pid_id__post
+      parameters:
+        - required: true
+          schema:
+            type: string
+            title: Pid Id
+          name: pid_id
+          in: path
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: >-
+                #/components/schemas/Body_detect_symbols_api_pid_digitization_symbol_detection__pid_id__post
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SymbolDetectionInferenceResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/pid-digitization/text-detection/{pid_id}:
+    post:
+      tags:
+        - pid-digitization
+      summary: Detect Text
+      description: >-
+        This endpoint takes in the P&ID image id to download the original image
+        and recognize the texts of the image.
+
+        Additionally, it takes in the corrected symbol detected inference
+        results which will be stored and used to
+
+        associate a text with a symbol.
+
+
+        Returns the text detection inference results, which includes all text
+        detected and
+
+        the text and symbols associated on a P&ID image.
+      operationId: detect_text_api_pid_digitization_text_detection__pid_id__post
+      parameters:
+        - description: The P&ID image id
+          required: true
+          schema:
+            type: string
+            title: Pid Id
+            description: The P&ID image id
+          name: pid_id
+          in: path
+      requestBody:
+        content:
+          application/json:
+            schema:
+              allOf:
+                - $ref: '#/components/schemas/SymbolDetectionInferenceResponse'
+              title: Corrected Symbol Detection Results
+              description: >-
+                The corrected symbol
+                detection                                                                                
+                inference results
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TextDetectionInferenceResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/pid-digitization/graph-construction/{pid_id}:
+    post:
+      tags:
+        - pid-digitization
+      summary: Detect Lines And Construct Graph
+      description: >-
+        This endpoint takes in the P&ID image id and the text response and then
+        will build an asset connected
+
+        graph based on the line segments, text detection results and symbol
+        associations.
+      operationId: >-
+        detect_lines_and_construct_graph_api_pid_digitization_graph_construction__pid_id__post
+      parameters:
+        - description: The P&ID image id
+          required: true
+          schema:
+            type: string
+            title: Pid Id
+            description: The P&ID image id
+          name: pid_id
+          in: path
+      requestBody:
+        content:
+          application/json:
+            schema:
+              allOf:
+                - $ref: '#/components/schemas/GraphConstructionInferenceRequest'
+              title: Graph Construction Request
+              description: >-
+                The corrected text
+                detection                                                                                
+                inference results
+        required: true
+      responses:
+        '202':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/pid-digitization/graph-persistence/{pid_id}:
+    post:
+      tags:
+        - pid-digitization
+      summary: Persist Graph
+      description: >-
+        For the given P&ID image id, the graph output (if any) from the prior
+        step is persisted in the graph database.
+      operationId: persist_graph_api_pid_digitization_graph_persistence__pid_id__post
+      parameters:
+        - description: The P&ID image id
+          required: true
+          schema:
+            type: string
+            title: Pid Id
+            description: The P&ID image id
+          name: pid_id
+          in: path
+      requestBody:
+        content:
+          application/json:
+            schema:
+              allOf:
+                - $ref: '#/components/schemas/GraphConstructionInferenceResponse'
+              title: Graph Persistence Request
+              description: >-
+                Persist the final
+                graph                                                                                
+                into the graph database
+        required: true
+      responses:
+        '201':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/pid-digitization/{inference_result_type}/{pid_id}:
+    get:
+      tags:
+        - pid-digitization
+      summary: Get Inference Results
+      description: |-
+        Gets the inference results for a given pid id and inference result type.
+
+        param pid: The PID id.
+        param inference_result_type: The inference result type.
+        return: The inference results.
+        rtype: symbol_detection.InferenceResponse
+      operationId: >-
+        get_inference_results_api_pid_digitization__inference_result_type___pid_id__get
+      parameters:
+        - required: true
+          schema:
+            $ref: '#/components/schemas/InferenceResult'
+          name: inference_result_type
+          in: path
+        - required: true
+          schema:
+            type: string
+            title: Pid Id
+          name: pid_id
+          in: path
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                anyOf:
+                  - $ref: '#/components/schemas/SymbolDetectionInferenceResponse'
+                  - $ref: '#/components/schemas/TextDetectionInferenceResponse'
+                  - $ref: '#/components/schemas/LineDetectionInferenceResponse'
+                  - $ref: '#/components/schemas/GraphConstructionInferenceResponse'
+                title: >-
+                  Response Get Inference Results Api Pid Digitization  Inference
+                  Result Type   Pid Id  Get
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/pid-digitization/graph-construction/{pid_id}/status:
+    get:
+      tags:
+        - pid-digitization
+      summary: Get Job Status
+      description: |-
+        Gets the inference job status for a given pid id .
+        param pid: The PID id.
+        return: The JobStatus of pid_id.
+        rtype: JobStatus
+      operationId: >-
+        get_job_status_api_pid_digitization_graph_construction__pid_id__status_get
+      parameters:
+        - required: true
+          schema:
+            type: string
+            title: Pid Id
+          name: pid_id
+          in: path
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/pid-digitization/{inference_result_type}/{pid_id}/images:
+    get:
+      tags:
+        - pid-digitization
+      summary: Get Output Inference Images
+      description: >-
+        Gets the inference output image for a given pid id and inference result
+        type.
+
+        param pid: The PID id.
+
+        param inference_result_type: The inference result type.
+
+        rtype: ImageResponse
+
+        The inference output image has information overlayed on the original
+        image
+
+        that provides user insight into what was done in the inferencing
+        service.
+      operationId: >-
+        get_output_inference_images_api_pid_digitization__inference_result_type___pid_id__images_get
+      parameters:
+        - required: true
+          schema:
+            type: string
+            title: Pid Id
+          name: pid_id
+          in: path
+        - required: true
+          schema:
+            $ref: '#/components/schemas/InferenceResult'
+          name: inference_result_type
+          in: path
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  '':
+    get:
+      summary: Metrics
+      description: Endpoint that serves Prometheus metrics.
+      operationId: metrics_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+components:
+  schemas:
+    Body_detect_symbols_api_pid_digitization_symbol_detection__pid_id__post:
+      properties:
+        bounding_box_inclusive_str:
+          type: string
+          format: json-string
+          title: Bounding Box Inclusive Str
+          description: >-
+            The bounding box of the P&ID image without extraneous legend
+            information.This should be provided as a JSON string with the
+            following format: {"topX": 0.0, "topY": 0.0, "bottomX": 1.0,
+            "bottomY": 1.0}.  The coordinates should be normalized to the range
+            [0, 1]. The default value is the entire image.
+          default:
+            topX: 0
+            topY: 0
+            bottomX: 1
+            bottomY: 1
+        file:
+          type: string
+          format: binary
+          title: File
+          description: The P&ID image to detect symbols in.
+      type: object
+      required:
+        - file
+      title: Body_detect_symbols_api_pid_digitization_symbol_detection__pid_id__post
+    BoundingBox:
+      properties:
+        topX:
+          type: number
+          title: Topx
+        topY:
+          type: number
+          title: Topy
+        bottomX:
+          type: number
+          title: Bottomx
+        bottomY:
+          type: number
+          title: Bottomy
+      type: object
+      required:
+        - topX
+        - topY
+        - bottomX
+        - bottomY
+      title: BoundingBox
+      description: >-
+        This class represents the bounding box of a symbol detected on a P&ID
+        image.
+    ConnectedSymbolsConnectionItem:
+      properties:
+        id:
+          type: integer
+          title: Id
+        label:
+          type: string
+          title: Label
+        text_associated:
+          type: string
+          title: Text Associated
+        bounding_box:
+          $ref: '#/components/schemas/BoundingBox'
+        flow_direction:
+          $ref: '#/components/schemas/FlowDirection'
+        segments:
+          items:
+            $ref: '#/components/schemas/BoundingBox'
+          type: array
+          title: Segments
+      type: object
+      required:
+        - id
+        - label
+        - text_associated
+        - bounding_box
+        - flow_direction
+        - segments
+      title: ConnectedSymbolsConnectionItem
+      description: This class represents a symbol that is connected to other symbols
+    ConnectedSymbolsItem:
+      properties:
+        id:
+          type: integer
+          title: Id
+        label:
+          type: string
+          title: Label
+        text_associated:
+          type: string
+          title: Text Associated
+        bounding_box:
+          $ref: '#/components/schemas/BoundingBox'
+        connections:
+          items:
+            $ref: '#/components/schemas/ConnectedSymbolsConnectionItem'
+          type: array
+          title: Connections
+      type: object
+      required:
+        - id
+        - label
+        - text_associated
+        - bounding_box
+        - connections
+      title: ConnectedSymbolsItem
+      description: This class represents a symbol that is connected to other symbols
+    FlowDirection:
+      type: string
+      enum:
+        - unknown
+        - upstream
+        - downstream
+      title: FlowDirection
+      description: Enum for the flow direction
+    GraphConstructionInferenceRequest:
+      properties:
+        image_url:
+          type: string
+          title: Image Url
+        image_details:
+          $ref: '#/components/schemas/ImageDetails'
+        bounding_box_inclusive:
+          $ref: '#/components/schemas/BoundingBox'
+        all_text_list:
+          items:
+            $ref: '#/components/schemas/TextRecognized'
+          type: array
+          title: All Text List
+        text_and_symbols_associated_list:
+          items:
+            $ref: '#/components/schemas/SymbolAndTextAssociated'
+          type: array
+          title: Text And Symbols Associated List
+        hough_threshold:
+          type: integer
+          title: Hough Threshold
+        hough_min_line_length:
+          type: integer
+          title: Hough Min Line Length
+        hough_max_line_gap:
+          type: integer
+          title: Hough Max Line Gap
+        hough_rho:
+          type: number
+          title: Hough Rho
+        hough_theta:
+          type: integer
+          title: Hough Theta
+        thinning_enabled:
+          type: boolean
+          title: Thinning Enabled
+      type: object
+      required:
+        - image_url
+        - image_details
+        - all_text_list
+        - text_and_symbols_associated_list
+      title: GraphConstructionInferenceRequest
+      description: >-
+        This class represents the parameters used in the Hough Transform
+        algorithm.
+    GraphConstructionInferenceResponse:
+      properties:
+        image_url:
+          type: string
+          title: Image Url
+        image_details:
+          $ref: '#/components/schemas/ImageDetails'
+        connected_symbols:
+          items:
+            $ref: '#/components/schemas/ConnectedSymbolsItem'
+          type: array
+          title: Connected Symbols
+      type: object
+      required:
+        - image_url
+        - image_details
+        - connected_symbols
+      title: GraphConstructionInferenceResponse
+      description: This class represents the container of connected symbols
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    ImageDetails:
+      properties:
+        format:
+          type: string
+          title: Format
+          default: png
+        width:
+          type: integer
+          title: Width
+        height:
+          type: integer
+          title: Height
+      type: object
+      required:
+        - width
+        - height
+      title: ImageDetails
+      description: This class represents the details of a P&ID image.
+    InferenceResult:
+      type: string
+      enum:
+        - symbol-detection
+        - text-detection
+        - graph-construction
+        - line-detection
+        - graph-persistence
+      title: InferenceResult
+      description: Enum for the inference result type
+    Label:
+      properties:
+        topX:
+          type: number
+          title: Topx
+        topY:
+          type: number
+          title: Topy
+        bottomX:
+          type: number
+          title: Bottomx
+        bottomY:
+          type: number
+          title: Bottomy
+        id:
+          type: integer
+          title: Id
+        label:
+          type: string
+          title: Label
+        score:
+          type: number
+          title: Score
+      type: object
+      required:
+        - topX
+        - topY
+        - bottomX
+        - bottomY
+        - id
+        - label
+      title: Label
+      description: >-
+        This class represents a tagged label of a symbol detected on a P&ID
+        image.
+    LineDetectionInferenceResponse:
+      properties:
+        image_url:
+          type: string
+          title: Image Url
+        image_details:
+          $ref: '#/components/schemas/ImageDetails'
+        line_segments_count:
+          type: integer
+          title: Line Segments Count
+        line_segments:
+          items:
+            $ref: '#/components/schemas/LineSegment'
+          type: array
+          title: Line Segments
+      type: object
+      required:
+        - image_url
+        - image_details
+        - line_segments_count
+        - line_segments
+      title: LineDetectionInferenceResponse
+      description: This class represents the response of the line detection service.
+    LineSegment:
+      properties:
+        startX:
+          type: number
+          title: Startx
+        startY:
+          type: number
+          title: Starty
+        endX:
+          type: number
+          title: Endx
+        endY:
+          type: number
+          title: Endy
+      type: object
+      required:
+        - startX
+        - startY
+        - endX
+        - endY
+      title: LineSegment
+      description: This class represents the line segment detected on a P&ID image.
+    SymbolAndTextAssociated:
+      properties:
+        topX:
+          type: number
+          title: Topx
+        topY:
+          type: number
+          title: Topy
+        bottomX:
+          type: number
+          title: Bottomx
+        bottomY:
+          type: number
+          title: Bottomy
+        id:
+          type: integer
+          title: Id
+        label:
+          type: string
+          title: Label
+        score:
+          type: number
+          title: Score
+        text_associated:
+          type: string
+          title: Text Associated
+      type: object
+      required:
+        - topX
+        - topY
+        - bottomX
+        - bottomY
+        - id
+        - label
+      title: SymbolAndTextAssociated
+      description: >-
+        Class that represents the symbol detected properties and the text
+        associated within the symbol
+    SymbolDetectionInferenceResponse:
+      properties:
+        image_url:
+          type: string
+          title: Image Url
+        image_details:
+          $ref: '#/components/schemas/ImageDetails'
+        bounding_box_inclusive:
+          $ref: '#/components/schemas/BoundingBox'
+        label:
+          items:
+            $ref: '#/components/schemas/Label'
+          type: array
+          title: Label
+      type: object
+      required:
+        - image_url
+        - image_details
+        - label
+      title: SymbolDetectionInferenceResponse
+      description: >-
+        This class represents the symbol detection inference results; which
+        includes
+
+        all symbols detected, and the symbols and text associated on a P&ID
+        image.
+    TextDetectionInferenceResponse:
+      properties:
+        image_url:
+          type: string
+          title: Image Url
+        image_details:
+          $ref: '#/components/schemas/ImageDetails'
+        bounding_box_inclusive:
+          $ref: '#/components/schemas/BoundingBox'
+        all_text_list:
+          items:
+            $ref: '#/components/schemas/TextRecognized'
+          type: array
+          title: All Text List
+        text_and_symbols_associated_list:
+          items:
+            $ref: '#/components/schemas/SymbolAndTextAssociated'
+          type: array
+          title: Text And Symbols Associated List
+      type: object
+      required:
+        - image_url
+        - image_details
+        - all_text_list
+        - text_and_symbols_associated_list
+      title: TextDetectionInferenceResponse
+      description: >-
+        This class represents the text detection inference results; which
+        includes
+
+        all text detected, and the text and symbols associated on a P&ID image.
+    TextRecognized:
+      properties:
+        topX:
+          type: number
+          title: Topx
+        topY:
+          type: number
+          title: Topy
+        bottomX:
+          type: number
+          title: Bottomx
+        bottomY:
+          type: number
+          title: Bottomy
+        text:
+          type: string
+          title: Text
+      type: object
+      required:
+        - topX
+        - topY
+        - bottomX
+        - bottomY
+        - text
+      title: TextRecognized
+      description: |-
+        "
+        Class that represents the text detected properties
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+              - type: string
+              - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+      type: object
+      required:
+        - loc
+        - msg
+        - type
+      title: ValidationError

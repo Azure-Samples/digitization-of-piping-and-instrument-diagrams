@@ -1,0 +1,1135 @@
+{
+    "connected_symbols": [
+        {
+            "id": 0,
+            "label": "1",
+            "text_associated": "2K-101",
+            "connections": [
+                {
+                    "id": 14,
+                    "label": "1",
+                    "text_associated": "PIA 1050",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 13,
+                    "label": "1",
+                    "text_associated": "TIC 1046",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 12,
+                    "label": "1",
+                    "text_associated": "TIC 1000",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 11,
+                    "label": "1",
+                    "text_associated": "PI 1265",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 10,
+                    "label": "1",
+                    "text_associated": "PG",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "TG 1047",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 1,
+                    "label": "1",
+                    "text_associated": "TI 1269B",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 2,
+                    "label": "1",
+                    "text_associated": "TI 1048",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 3,
+                    "label": "1",
+                    "text_associated": "TIC 1001",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 4,
+                    "label": "1",
+                    "text_associated": "TG 1049",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 5,
+                    "label": "1",
+                    "text_associated": "PT 1003",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 6,
+                    "label": "1",
+                    "text_associated": "PIC 1002A",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 7,
+                    "label": "1",
+                    "text_associated": "PIA 1002",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 8,
+                    "label": "1",
+                    "text_associated": "TI 1269A",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "label": "1",
+            "text_associated": "PIA 1050",
+            "connections": [
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "2K-101",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 13,
+                    "label": "1",
+                    "text_associated": "TIC 1046",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 12,
+                    "label": "1",
+                    "text_associated": "TIC 1000",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 11,
+                    "label": "1",
+                    "text_associated": "PI 1265",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 10,
+                    "label": "1",
+                    "text_associated": "PG",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "TG 1047",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "label": "1",
+            "text_associated": "TIC 1046",
+            "connections": [
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "2K-101",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 14,
+                    "label": "1",
+                    "text_associated": "PIA 1050",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 12,
+                    "label": "1",
+                    "text_associated": "TIC 1000",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 11,
+                    "label": "1",
+                    "text_associated": "PI 1265",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 10,
+                    "label": "1",
+                    "text_associated": "PG",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "TG 1047",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "label": "1",
+            "text_associated": "TIC 1000",
+            "connections": [
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "2K-101",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 14,
+                    "label": "1",
+                    "text_associated": "PIA 1050",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 13,
+                    "label": "1",
+                    "text_associated": "TIC 1046",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 11,
+                    "label": "1",
+                    "text_associated": "PI 1265",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 10,
+                    "label": "1",
+                    "text_associated": "PG",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "TG 1047",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "label": "1",
+            "text_associated": "PI 1265",
+            "connections": [
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "2K-101",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 14,
+                    "label": "1",
+                    "text_associated": "PIA 1050",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 13,
+                    "label": "1",
+                    "text_associated": "TIC 1046",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 12,
+                    "label": "1",
+                    "text_associated": "TIC 1000",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 10,
+                    "label": "1",
+                    "text_associated": "PG",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "TG 1047",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "label": "1",
+            "text_associated": "PG",
+            "connections": [
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "2K-101",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 14,
+                    "label": "1",
+                    "text_associated": "PIA 1050",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 13,
+                    "label": "1",
+                    "text_associated": "TIC 1046",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 12,
+                    "label": "1",
+                    "text_associated": "TIC 1000",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 11,
+                    "label": "1",
+                    "text_associated": "PI 1265",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "TG 1047",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 0,
+            "label": "1",
+            "text_associated": "TG 1047",
+            "connections": [
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "2K-101",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 14,
+                    "label": "1",
+                    "text_associated": "PIA 1050",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 13,
+                    "label": "1",
+                    "text_associated": "TIC 1046",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 12,
+                    "label": "1",
+                    "text_associated": "TIC 1000",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 11,
+                    "label": "1",
+                    "text_associated": "PI 1265",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 10,
+                    "label": "1",
+                    "text_associated": "PG",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "label": "1",
+            "text_associated": "TI 1269B",
+            "connections": [
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "2K-101",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 2,
+                    "label": "1",
+                    "text_associated": "TI 1048",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 3,
+                    "label": "1",
+                    "text_associated": "TIC 1001",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 4,
+                    "label": "1",
+                    "text_associated": "TG 1049",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 5,
+                    "label": "1",
+                    "text_associated": "PT 1003",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 6,
+                    "label": "1",
+                    "text_associated": "PIC 1002A",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 7,
+                    "label": "1",
+                    "text_associated": "PIA 1002",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 8,
+                    "label": "1",
+                    "text_associated": "TI 1269A",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "label": "1",
+            "text_associated": "TI 1048",
+            "connections": [
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "2K-101",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 1,
+                    "label": "1",
+                    "text_associated": "TI 1269B",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 3,
+                    "label": "1",
+                    "text_associated": "TIC 1001",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 4,
+                    "label": "1",
+                    "text_associated": "TG 1049",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 5,
+                    "label": "1",
+                    "text_associated": "PT 1003",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 6,
+                    "label": "1",
+                    "text_associated": "PIC 1002A",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 7,
+                    "label": "1",
+                    "text_associated": "PIA 1002",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 8,
+                    "label": "1",
+                    "text_associated": "TI 1269A",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "label": "1",
+            "text_associated": "TIC 1001",
+            "connections": [
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "2K-101",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 1,
+                    "label": "1",
+                    "text_associated": "TI 1269B",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 2,
+                    "label": "1",
+                    "text_associated": "TI 1048",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 4,
+                    "label": "1",
+                    "text_associated": "TG 1049",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 5,
+                    "label": "1",
+                    "text_associated": "PT 1003",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 6,
+                    "label": "1",
+                    "text_associated": "PIC 1002A",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 7,
+                    "label": "1",
+                    "text_associated": "PIA 1002",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 8,
+                    "label": "1",
+                    "text_associated": "TI 1269A",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "label": "1",
+            "text_associated": "TG 1049",
+            "connections": [
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "2K-101",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 1,
+                    "label": "1",
+                    "text_associated": "TI 1269B",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 2,
+                    "label": "1",
+                    "text_associated": "TI 1048",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 3,
+                    "label": "1",
+                    "text_associated": "TIC 1001",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 5,
+                    "label": "1",
+                    "text_associated": "PT 1003",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 6,
+                    "label": "1",
+                    "text_associated": "PIC 1002A",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 7,
+                    "label": "1",
+                    "text_associated": "PIA 1002",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 8,
+                    "label": "1",
+                    "text_associated": "TI 1269A",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "label": "1",
+            "text_associated": "PT 1003",
+            "connections": [
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "2K-101",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 1,
+                    "label": "1",
+                    "text_associated": "TI 1269B",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 2,
+                    "label": "1",
+                    "text_associated": "TI 1048",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 3,
+                    "label": "1",
+                    "text_associated": "TIC 1001",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 4,
+                    "label": "1",
+                    "text_associated": "TG 1049",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 6,
+                    "label": "1",
+                    "text_associated": "PIC 1002A",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 7,
+                    "label": "1",
+                    "text_associated": "PIA 1002",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 8,
+                    "label": "1",
+                    "text_associated": "TI 1269A",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "label": "1",
+            "text_associated": "PIC 1002A",
+            "connections": [
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "2K-101",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 1,
+                    "label": "1",
+                    "text_associated": "TI 1269B",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 2,
+                    "label": "1",
+                    "text_associated": "TI 1048",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 3,
+                    "label": "1",
+                    "text_associated": "TIC 1001",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 4,
+                    "label": "1",
+                    "text_associated": "TG 1049",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 5,
+                    "label": "1",
+                    "text_associated": "PT 1003",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 7,
+                    "label": "1",
+                    "text_associated": "PIA 1002",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 8,
+                    "label": "1",
+                    "text_associated": "TI 1269A",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "label": "1",
+            "text_associated": "PIA 1002",
+            "connections": [
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "2K-101",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 1,
+                    "label": "1",
+                    "text_associated": "TI 1269B",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 2,
+                    "label": "1",
+                    "text_associated": "TI 1048",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 3,
+                    "label": "1",
+                    "text_associated": "TIC 1001",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 4,
+                    "label": "1",
+                    "text_associated": "TG 1049",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 5,
+                    "label": "1",
+                    "text_associated": "PT 1003",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 6,
+                    "label": "1",
+                    "text_associated": "PIC 1002A",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 8,
+                    "label": "1",
+                    "text_associated": "TI 1269A",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "label": "1",
+            "text_associated": "TI 1269A",
+            "connections": [
+                {
+                    "id": 0,
+                    "label": "1",
+                    "text_associated": "2K-101",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 1,
+                    "label": "1",
+                    "text_associated": "TI 1269B",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 2,
+                    "label": "1",
+                    "text_associated": "TI 1048",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 3,
+                    "label": "1",
+                    "text_associated": "TIC 1001",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 4,
+                    "label": "1",
+                    "text_associated": "TG 1049",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 5,
+                    "label": "1",
+                    "text_associated": "PT 1003",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 6,
+                    "label": "1",
+                    "text_associated": "PIC 1002A",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                },
+                {
+                    "id": 7,
+                    "label": "1",
+                    "text_associated": "PIA 1002",
+                    "flow_direction": "unknown",
+                    "line_metadata": {
+                        "line_type": "unknown"
+                    }
+                }
+            ]
+        }
+    ]
+}
