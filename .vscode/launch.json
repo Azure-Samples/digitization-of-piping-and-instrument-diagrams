@@ -1,0 +1,134 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: FastAPI",
+            "type": "python",
+            "request": "launch",
+            "module": "gunicorn",
+            "envFile": "${workspaceFolder}/src/.env",
+            "args": [
+                "init_app:app",
+                "-k",
+                "uvicorn.workers.UvicornWorker",
+                "-w",
+                "1",
+                "-b",
+                "0.0.0.0",
+                "--timeout",
+                "300"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/src",
+            "justMyCode": false
+        },
+        {
+            "name": "Python: Symbol Detection",
+            "type": "python",
+            "request": "launch",
+            "module": "app.services.symbol_detection.symbol_detection_service",
+            "envFile": "${workspaceFolder}/src/.env",
+            "args": [
+                "--pid-id", "pid123",
+                "--image-path", "./app/services/symbol_detection/input/image.png"
+            ],
+            "cwd": "${workspaceFolder}/src",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Text Detection",
+            "type": "python",
+            "request": "launch",
+            "module": "app.services.text_detection.text_detection_service",
+            "envFile": "${workspaceFolder}/src/.env",
+            "args": [
+                "--pid-id", "pid123",
+                "--symbol-detection-inference-results-path", "./app/services/text_detection/input/symbol_detection_results.json",
+                "--image-path", "./app/services/text_detection/input/image.png",
+                "--symbol-label-prefixes-with-text", "Instrument/,Equipment/,Piping/Endpoint/Pagination"
+            ],
+            "cwd": "${workspaceFolder}/src",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Line Segments Detection",
+            "type": "python",
+            "request": "launch",
+            "envFile": "${workspaceFolder}/src/.env",
+            "module": "app.services.line_detection.line_segments_service",
+            "args": [
+                "--pid-id", "S1",
+                "--image-path", "./samples/input/images/S1.png",
+                "--preprocessed-image-path", "./app/services/line_detection/input/S1-cropped_text.jpg",
+                "--relevant-bounding-box-for-detection", "{\"topX\": 45, \"topY\": 49, \"bottomX\": 997, \"bottomY\": 728}",
+                "--image-height", "781",
+                "--image-width", "1388"
+            ],
+            "cwd": "${workspaceFolder}/src/",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Graph Construction",
+            "type": "python",
+            "request": "launch",
+            "envFile": "${workspaceFolder}/src/.env",
+            "module": "app.services.graph_construction.graph_construction_service",
+            "args": [
+                "--pid-id", "S1_sub1",
+                "--image-path", "./app/services/graph_construction/input/images/S1_sub1.png",
+                "--line-detection-path", "./app/services/graph_construction/input/line_detection/S1_sub1.json",
+                "--text-detection-path", "./app/services/graph_construction/input/text_detection/S1_sub1.json",
+                "--output-image-graph-path", "./app/services/graph_construction/output/S1_sub1_graph.png",
+                "--debug-image-graph-connections-path",  "./app/services/graph_construction/output/S1_sub1_annotated_connected_graph.png",
+                "--output-connectivity-json-path", "./app/services/graph_construction/output/S1_sub1_graph.json",
+                "--debug-image-graph-with-lines-and-symbols-path", "./app/services/graph_construction/output/S1_sub1_graph_with_lines_and_symbols.png"
+            ],
+            "cwd": "${workspaceFolder}/src/",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Graph Persistence",
+            "type": "python",
+            "request": "launch",
+            "envFile": "${workspaceFolder}/src/.env",
+            "module": "app.services.graph_persistence.graph_persistence_service",
+            "args": [
+                "--pid-id", "S1_sub1",
+                "--graph-construction-path", "./app/services/graph_persistence/input/S1_sub1_graph.json",
+            ],
+            "cwd": "${workspaceFolder}/src/",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Graph Construction Visualization Path Tool",
+            "type": "python",
+            "request": "launch",
+            "module": "app.services.graph_construction.tools.show_paths",
+            "args": [
+                "--image-path", "./app/services/graph_construction/input/images/S1_sub1.png",
+                "--asset-connectivity-path", "./app/services/graph_construction/output/S1_sub1_graph.json",
+                "--starting-asset-id", "60",
+                "--output-folder-path", "./app/services/graph_construction/output/sub_graphs/S1_sub1"
+            ],
+            "cwd": "${workspaceFolder}/src/",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Arrow Detection Spike",
+            "type": "python",
+            "request": "launch",
+            "module": "main",
+            "args": [
+                "--image-path", "S1_sub2/S1_sub2.png",
+                "--symbol-detection-results-path", "S1_sub2/S1_sub2_response_text_detection.json",
+                "--line-detection-results-path", "S1_sub2/S1_sub2_response_line_detection.json",
+                "--image-output-path", "S1_sub2_arrow_detection_output.png",
+            ],
+            "cwd": "${workspaceFolder}/spikes/arrow-detection/src/",
+            "justMyCode": true
+        }
+    ]
+}

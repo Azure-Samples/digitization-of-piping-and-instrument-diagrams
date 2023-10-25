@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "graph-data-model", "graph-data-model.sqlproj", "{041C9DAC-7876-48E6-8F4A-3D510BC97AB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{041C9DAC-7876-48E6-8F4A-3D510BC97AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041C9DAC-7876-48E6-8F4A-3D510BC97AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041C9DAC-7876-48E6-8F4A-3D510BC97AB9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{041C9DAC-7876-48E6-8F4A-3D510BC97AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041C9DAC-7876-48E6-8F4A-3D510BC97AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041C9DAC-7876-48E6-8F4A-3D510BC97AB9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {838EE762-CFC2-41A6-8DD2-BDDB4BC9C7FC}
+	EndGlobalSection
+EndGlobal
