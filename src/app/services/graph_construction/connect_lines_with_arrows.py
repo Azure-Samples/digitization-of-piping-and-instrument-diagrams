@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from app.services.graph_construction.utils.id_builder_util import get_int_id_from_node_id, get_node_type_from_node_id
 from app.utils.shapely_utils import bounding_box_to_polygon, convert_line_to_line_string, get_polygon_sides
 from app.models.enums.graph_node_type import GraphNodeType

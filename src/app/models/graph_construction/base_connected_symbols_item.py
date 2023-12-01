@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from pydantic import BaseModel
 from app.models.bounding_box import BoundingBox
 

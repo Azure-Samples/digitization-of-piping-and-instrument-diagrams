@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from pydantic import BaseModel
 from app.models.graph_construction.connected_symbols_item import ConnectedSymbolsItem
 from app.models.image_details import ImageDetails

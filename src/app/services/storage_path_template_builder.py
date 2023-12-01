@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from app.models.enums.inference_result import InferenceResult
 from typing import Optional
 

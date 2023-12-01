@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from pydantic import BaseModel
 from app.models.line_detection.line_segment import LineSegment
 from app.models.image_details import ImageDetails

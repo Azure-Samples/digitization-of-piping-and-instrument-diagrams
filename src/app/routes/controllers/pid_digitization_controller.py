@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from pydantic import Json
 from app.config import config
 from app.models.enums.inference_result import InferenceResult

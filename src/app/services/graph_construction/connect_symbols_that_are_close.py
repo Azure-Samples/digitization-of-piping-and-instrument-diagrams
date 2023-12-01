@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from app.models.text_detection.symbol_and_text_associated import SymbolAndTextAssociated
 from app.utils.shapely_utils import (bounding_box_to_polygon,
                                      is_high_overlap_in_horizontal_region,

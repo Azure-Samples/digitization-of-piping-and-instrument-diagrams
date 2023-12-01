@@ -1,4 +1,6 @@
 
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from app.models.enums.job_status import JobStatus
 from pydantic import BaseModel
 from typing import Optional

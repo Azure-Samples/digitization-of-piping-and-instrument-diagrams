@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 import cv2
 import networkx as nx
 from logger_config import get_logger

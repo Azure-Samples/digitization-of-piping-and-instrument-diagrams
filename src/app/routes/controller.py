@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Depends
 from fastapi_health import health

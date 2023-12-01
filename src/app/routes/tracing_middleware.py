@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from fastapi import FastAPI, HTTPException, Request, Response, UploadFile
 from starlette.types import Message
 from starlette.middleware.base import BaseHTTPMiddleware

@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 import time
 from app.models.line_detection.line_segment import LineSegment
 from app.models.text_detection.symbol_and_text_associated import SymbolAndTextAssociated

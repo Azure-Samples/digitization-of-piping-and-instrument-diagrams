@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from typing import Optional
 from app.models.text_detection.text_recognized import TextRecognized
 from app.models.bounding_box import BoundingBox

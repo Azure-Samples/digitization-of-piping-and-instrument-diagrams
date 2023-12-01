@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from requests import Session
 from requests.adapters import HTTPAdapter, Retry
 from typing import List
