@@ -1,4 +1,5 @@
-
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from app.models.graph_persistence.nodes.pnid import PnId
 from app.models.graph_construction.connected_symbols_item import ConnectedSymbolsItem
 from app.models.graph_persistence.nodes.sheet import Sheet

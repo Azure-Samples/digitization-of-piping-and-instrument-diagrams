@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from app.models.symbol_detection.label import Label
 from app.utils.shapely_utils import bounding_box_to_polygon, is_high_overlap
 from logger_config import get_logger

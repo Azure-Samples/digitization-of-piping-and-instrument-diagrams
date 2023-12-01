@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from app.config import config
 from app.services.graph_construction.graph_service import GraphService
 from app.models.graph_construction.pre_find_symbol_connectivities_response import PreFindSymbolConnectivitiesResponse

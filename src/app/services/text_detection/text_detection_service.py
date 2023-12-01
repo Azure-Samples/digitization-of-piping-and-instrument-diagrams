@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from app.models.text_detection.text_detection_inference_response import TextDetectionInferenceResponse
 from app.models.text_detection.text_recognized import TextRecognized
 from app.models.symbol_detection.symbol_detection_inference_response import SymbolDetectionInferenceResponse

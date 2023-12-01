@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 import argparse
 import networkx as nx
 from app.models.enums.graph_node_type import GraphNodeType

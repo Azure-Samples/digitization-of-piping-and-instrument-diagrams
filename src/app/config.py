@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from pydantic import BaseSettings, root_validator, validator
 
 from typing import Union, Optional

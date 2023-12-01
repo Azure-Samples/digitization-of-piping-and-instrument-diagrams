@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 import cv2
 import numpy as np
 from app.services.base_image_preprocessor import to_grayscale, to_binary

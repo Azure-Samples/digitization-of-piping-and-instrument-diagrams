@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from prometheus_fastapi_instrumentator import Instrumentator
 from prometheus_client import start_http_server
 import logger_config

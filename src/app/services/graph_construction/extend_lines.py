@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from app.models.line_detection.line_segment import LineSegment
 import math
 

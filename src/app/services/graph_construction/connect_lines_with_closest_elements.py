@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from app.models.enums.graph_node_type import GraphNodeType
 from app.models.line_detection.line_segment import LineSegment
 from app.models.text_detection.text_recognized import TextRecognized

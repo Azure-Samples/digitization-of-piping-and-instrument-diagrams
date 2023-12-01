@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from app.config import Config, config
 from app.constants.http_methods import HttpMethods
 from app.services.request_session_builder import build_request_session

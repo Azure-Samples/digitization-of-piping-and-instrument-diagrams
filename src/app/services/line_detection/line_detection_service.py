@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from logger_config import get_logger
 from app.models.text_detection.text_detection_inference_response \
     import TextDetectionInferenceResponse

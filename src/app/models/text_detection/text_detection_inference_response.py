@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from app.models.image_details import ImageDetails
 from app.models.bounding_box import BoundingBox
 from .text_recognized import TextRecognized

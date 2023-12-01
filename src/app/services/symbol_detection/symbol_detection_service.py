@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from typing import Optional
 from app.config import config
 from app.models.symbol_detection import symbol_detection_inference_response

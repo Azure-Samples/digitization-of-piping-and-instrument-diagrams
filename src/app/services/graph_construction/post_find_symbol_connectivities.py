@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from app.services.graph_construction.graph_service import GraphService
 from app.services.graph_construction.config.symbol_node_keys_config import SymbolNodeKeysConfig
 from app.services.graph_construction.utils.id_builder_util import get_int_id_from_node_id

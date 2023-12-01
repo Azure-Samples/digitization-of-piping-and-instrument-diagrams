@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from azure.ai.formrecognizer import DocumentAnalysisClient
 from azure.ai.formrecognizer import AnalysisFeature
 from azure.identity import DefaultAzureCredential

@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from azure.ai.formrecognizer import AnalysisFeature
 import os
 import unittest

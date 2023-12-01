@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from app.config import Config, config
 from typing import Optional
 from azure.storage.blob import BlobServiceClient, ContainerClient

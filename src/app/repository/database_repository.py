@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 import json
 from app.models.graph_persistence.nodes.pnid import PnId
 from app.models.graph_persistence.nodes.sheet import Sheet

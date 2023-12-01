@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from typing import Optional
 from ..text_detection.text_detection_inference_response import TextDetectionInferenceResponse
 from ..bounding_box import BoundingBox

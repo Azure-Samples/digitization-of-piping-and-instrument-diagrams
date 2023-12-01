@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from app.models.bounding_box import BoundingBox
 from app.models.line_detection.line_segment import LineSegment
 from shapely import Point, LineString

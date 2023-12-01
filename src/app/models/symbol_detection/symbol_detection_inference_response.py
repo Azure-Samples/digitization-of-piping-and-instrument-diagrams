@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from typing import Optional
 from app.models.image_details import ImageDetails
 from app.models.symbol_detection.label import Label

@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from pyodbc import Cursor
 import app.repository.database_repository as database_repository
 from app.models.graph_construction.connected_symbols_item import ConnectedSymbolsItem

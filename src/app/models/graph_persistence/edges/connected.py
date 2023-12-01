@@ -1,3 +1,5 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
 from typing import Optional
 from app.models.graph_persistence.edges.base_edge import BaseEdge
 from app.models.bounding_box import BoundingBox
