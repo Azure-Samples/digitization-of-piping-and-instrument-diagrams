@@ -19,7 +19,7 @@ For additional details on the symbol detection model training and deployment, se
   - [Text detection](docs/text-detection-design.md)
   - [Line detection](docs/line-detection-design.md)
   - [Graph construction](docs/graph-construction-design.md)
-  - [Arrow direction detection](/arrow-direction-detection-design.md)
+  - [Arrow direction detection](docs/arrow-direction-detection-design.md)
   - [Process flow](docs/process-flow-design.md)
   - [Graph persistence](docs/design-db.md)
 - API contracts and Postman collection: The exported Swagger spec for the inference web API, as well as a convenient [Postman](https://www.postman.com/) collection for the exposed endpoints of the inference service.
