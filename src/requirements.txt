@@ -5,7 +5,7 @@ urllib3==2.0.7
 fastapi==0.109.1
 httpx==0.24.1
 uvicorn[standard]==0.22.0
-gunicorn==20.1.0
+gunicorn==23.0.0
 pytest-cov==4.1.0
 pytest-dotenv==0.5.2
 python-multipart==0.0.6
