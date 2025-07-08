@@ -20,7 +20,7 @@ pydantic<=2.0
 parameterized==0.9.0
 networkx==2.5.1
 shapely==2.0.1
-tqdm==4.65.0
+tqdm==4.66.3
 matplotlib==3.7.2
 pyodbc==4.0.39
 pdf2image
