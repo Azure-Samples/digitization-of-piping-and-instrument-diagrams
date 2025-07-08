@@ -14,7 +14,7 @@ prometheus_client==0.17.0
 fastapi-health==0.4.0
 python-decouple==3.8
 ecs-logging==2.0.2
-opencv-contrib-python==4.7.0.72
+opencv-contrib-python==4.8.1.78
 azure-ai-formrecognizer==3.3.0b1
 pydantic<=2.0
 parameterized==0.9.0
